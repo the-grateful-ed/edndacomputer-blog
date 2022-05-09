@@ -1,28 +1,30 @@
 <script context="module">
-    import { client } from '$lib/graphql-client'
-    import { postQuery } from '$lib/graphql-queries'
-    import { marked } from 'marked'
-  
-    export const load = async ({ params }) => {
-      const { slug } = params
-      const variables = { slug }
-      const { post } = await client.request(postQuery, variables)
-  
-      return {
-        props: {
-          post,
-        },
-      }
+  import { client } from '$lib/graphql-client'
+  import { postQuery } from '$lib/graphql-queries'
+  import { marked } from 'marked'
+
+  export const load = async ({ params }) => {
+    const { slug } = params
+    const variables = { slug }
+    const { post } = await client.request(postQuery, variables)
+
+    return {
+      props: {
+        post,
+      },
     }
-  </script>
-  
-  <script>
-    export let post
-  
-    const { title, date, tags, content, coverImage } = post
-  </script>
-  
-  <svelte:head>
+  }
+</script>
+
+<script>
+  export let post
+
+  const { title, date, tags, content, coverImage } = post
+</script>
+
+<svelte:head>
+  <title>Blog | {title}</title>
+</svelte:head>
     <div class="sm:-mx-5 md:-mx-10 lg:-mx-20 xl:-mx-38 mb-5">
       <img
         class="rounded-xl"
