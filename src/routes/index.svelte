@@ -48,7 +48,7 @@
 </div>
 <h1 class="text-center md:text-3xl text-2xl mb-6">my latest work</h1>
 <div
-  class="grid gap-10 md:grid-cols-4 md:px-10 lg:grid-cols-6"
+  class="grid gap-2 md:grid-cols-2 md:px-10 lg:grid-cols-2"
 >
   {#each projects as { name, slug, description, image }}
     <ProjectCard {name} {description} url={image[0].url} {slug} />
