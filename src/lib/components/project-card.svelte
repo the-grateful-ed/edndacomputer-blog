@@ -28,7 +28,7 @@
     <div class="card-actions justify-end">
       
       <a href={`/projects/${slug}`}>
-      <button class="btn btn-primary">Buy Now</button>
+      <button class="btn btn-primary">read more</button>
       </a>
       
     </div>

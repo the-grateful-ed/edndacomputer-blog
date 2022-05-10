@@ -41,13 +41,12 @@
 
  
     <img class="mask mask-squircle h-48" src={url} alt={name} />
-    <h2 class="font-bold text-center mb-20 text-xl">
-      hey, this is the edndacomputer blog, a personal account of my journey through the world of technology and life in general.
+    <h2 class="font-bold text-center mb-10 text-xl">
     </h2>
     {/each}
   </div>
 </div>
-
+<h1 class="text-center md:text-3xl text-2xl mb-6">my latest work</h1>
 <div
   class="grid gap-10 md:grid-cols-4 md:px-10 lg:grid-cols-6"
 >
