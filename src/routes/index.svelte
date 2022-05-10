@@ -49,7 +49,7 @@
 </div>
 
 <div
-  class="grid gap-10 md:grid-cols-2 md:px-10 container mx-auto max-w-4xl"
+  class="grid gap-10 md:grid-cols-4 md:px-10 lg:grid-cols-6"
 >
   {#each projects as { name, slug, description, image }}
     <ProjectCard {name} {description} url={image[0].url} {slug} />

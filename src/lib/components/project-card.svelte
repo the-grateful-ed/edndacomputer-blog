@@ -5,7 +5,7 @@
   export let description = ''
 </script>
 
-<div class="relative group card shadow-2xl col-span-2">
+<!-- <div class="relative group card shadow-2xl col-span-2">
   <img src={url} alt={name} class="object-cover h-full" />
   <a href={`/projects/${slug}`}>
     <div
@@ -17,4 +17,20 @@
       </p>
     </div>
   </a>
+</div> -->
+
+<div class="card w-64 bg-base-100 shadow-xl image-full">
+  
+  <figure><img src={url} alt={name} /></figure>
+  <div class="card-body">
+    <h2 class="card-title">{name}</h2>
+    <p>{description.slice(0, 80)}...</p>
+    <div class="card-actions justify-end">
+      
+      <a href={`/projects/${slug}`}>
+      <button class="btn btn-primary">Buy Now</button>
+      </a>
+      
+    </div>
+  </div>
 </div>
