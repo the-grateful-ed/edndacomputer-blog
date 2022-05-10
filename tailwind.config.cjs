@@ -3,6 +3,9 @@ const config = {
   
 	theme: {
 	  extend: {
+		  fontFamily: {
+			  sans: ['Poppins']
+		  },
 		container: {
 			center: "true",
 			margin: "1rem",
@@ -11,6 +14,9 @@ const config = {
 				xl: "1124px",
 				"2xl": "1124px"
 			},
+			animation: {
+				spin: "spin 10s linear infinite"
+			}
 		},
 		typography: {
 		  DEFAULT: {
