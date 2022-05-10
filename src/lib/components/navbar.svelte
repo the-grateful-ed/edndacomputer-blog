@@ -1,20 +1,21 @@
 <div
-  class="navbar mb-2 shadow-lg bg-neutral text-neutral-content rounded-box"
+	class="m-4 navbar shadow-lg bg-neutral text-neutral-content rounded-box md:max-w-4xl w-full container mx-auto"
 >
-  <div class="flex-1 px-2 mx-2">
-    <span class="text-lg font-bold">Portfolio and Blog</span>
-  </div>
-  <div class="flex-none hidden px-2 mx-2 lg:flex">
-    <div class="flex items-stretch">
-      <a class="btn btn-ghost btn-sm rounded-btn" href="/projects">
-        Portfolio
-      </a>
-      <a class="btn btn-ghost btn-sm rounded-btn" href="/posts"
-        >Blog</a
-      >
-      <a class="btn btn-ghost btn-sm rounded-btn" href="/about"
-        >About</a
-      >
-    </div>
-  </div>
+
+<div class="navbar bg-base-100">
+	<div class="flex-1">
+		<a href="/" class="btn btn-ghost normal-case text-xl">edndacomputer | a personal blog</a>
+	</div>
+	<div class="flex-none">
+		<ul class="menu menu-horizontal p-0">
+			<li>
+				<a class="btn btn-ghost btn-sm rounded-btn" href="/projects"> Portfolio </a>
+			</li>
+			<li><a class="btn btn-ghost btn-sm rounded-btn" href="/posts">Blog</a></li>
+			<li>
+				<a class="btn btn-ghost btn-sm rounded-btn" href="/about">About</a>
+			</li>
+		</ul>
+	</div>
+</div>
 </div>

@@ -3,6 +3,15 @@ const config = {
   
 	theme: {
 	  extend: {
+		container: {
+			center: "true",
+			margin: "1rem",
+			screens: {
+				lg: "1124px",
+				xl: "1124px",
+				"2xl": "1124px"
+			},
+		},
 		typography: {
 		  DEFAULT: {
 			css: {
